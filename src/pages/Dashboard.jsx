@@ -9,5 +9,5 @@ export default function Dashboard() {
         <Sidebar modal={modal} setModal={setModal} />
         {modal && <Compose setModal={setModal}/> }
     </div>
-  )
+  );
 }

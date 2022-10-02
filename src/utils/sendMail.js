@@ -1,6 +1,6 @@
 import useContract from "./useContract";
 
-async function sendMail(reciever, subject, body, timestamp, hash, filename) {
+async function sendMail(reciever, subject, body, hash, filename) {
   let IPFS_HASH = "",
     FILENAME = "";
   if (hash === "") {
@@ -19,7 +19,6 @@ async function sendMail(reciever, subject, body, timestamp, hash, filename) {
       reciever,
       subject,
       body,
-      timestamp,
       IPFS_HASH,
       FILENAME
     );
@@ -28,4 +27,4 @@ async function sendMail(reciever, subject, body, timestamp, hash, filename) {
     throw new Error("Something went wrong");
   }
 }
-export default getInBox;
+export default sendMail;
