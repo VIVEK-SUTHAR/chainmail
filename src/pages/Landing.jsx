@@ -1,7 +1,7 @@
 import { useState } from 'preact/hooks';
 import React from 'react';
 import { ethers } from "ethers";
-// import Mint from './Mint';
+import Dashboard from './Dashboard';
 
 export default function Landing() {
   const [walletConnected, setWalletConnected] = useState(false)
@@ -62,6 +62,6 @@ export default function Landing() {
         </div>
         <button className='mt-24 py-4 text-2xl bg-blue-500 hover:bg-blue-400 text-white font-bold px-6 border-b-8 border-blue-700 hover:border-blue-500 rounded' onClick={connectWallet}>Connect Wallet</button>
       </div>
-  </div>:(<h1>Successfull</h1>)
+  </div>:(<Dashboard />)
   )
 }
