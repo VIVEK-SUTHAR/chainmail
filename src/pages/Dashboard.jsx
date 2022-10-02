@@ -1,8 +1,11 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
-import { useState } from 'preact/hooks'
+import { useState, useEffect } from 'preact/hooks'
 import Compose from '../components/Compose'
 import MailBox from "../components/MailBox";
+import useStore from '../utils/store';
+import getInBox from "../utils/getInbox"
+
 export default function Dashboard() {
   const store = useStore();
   const allMails = store.allMails;
