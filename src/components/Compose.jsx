@@ -1,12 +1,22 @@
+import { useState } from "preact/hooks";
 import React from "react";
+import sendMail from "../utils/sendMail";
 
-export default function Compose({setModal}) {
+export default function Compose({ setModal }) {
+  const [to, setTo] = useState("");
+  const [subject, setSubject] = useState("");
+  const [body, setBody] = useState("");
+  async function sendMAIL() {
+    let txn = await sendMail(to, subject, body, "", "");
+    alert("Mail sent");
+    setModal(false);
+  }
   return (
-    <section className="absolute top-1/4 left-1/4 overflow-y-hidden w-3/5 bg-[#f2f6fc] shadow-lg">
+    <section className="absolute top-1/4 left-1/4 overflow-y-hidden w-3/5 bg-[#f2f6fc] shadow-lg z-50">
       <div className=" h-96 border-black rounded-2xl">
         <nav>
           <ul className="list-none">
-            <li onClick={()=>setModal(false)}>
+            <li onClick={() => setModal(false)}>
               <svg
                 className="hover:bg-red-600 transition ease-in-out w-12"
                 fill="#000000"
@@ -25,7 +35,12 @@ export default function Compose({setModal}) {
           <input
             className="p-2 m-2 bg-[#f2f6fc] w-full focus:outline-none"
             type="text"
+            onChange={(e) => {
+              e.preventDefault();
+              setTo(e.target.value);
+            }}
             name=""
+            value={to}
             id=""
           />
         </div>
@@ -35,20 +50,32 @@ export default function Compose({setModal}) {
           <input
             className="p-2 m-2 bg-[#f2f6fc] w-full focus:outline-none overflow-hidden"
             type="text"
+            value={subject}
+            onChange={(e) => {
+              e.preventDefault();
+              setSubject(e.target.value);
+            }}
             name=""
             id=""
           />
         </div>
         <hr className="border-t-2 mx-4 border-black" />
         <div className="flex items-center px-4">
-          <h4 className="text-lg">Body: </h4> 
+          <h4 className="text-lg">Body: </h4>
           <textarea
             className="p-2 m-2 w-full bg-[#f2f6fc] flex items-center focus:outline-none overflow-hidden"
+            onChange={(e) => {
+              e.preventDefault();
+              setBody(e.target.value);
+            }}
             type="text"
             name=""
             id=""
           />
         </div>
+        <button classname="" onClick={sendMAIL}>
+          Send
+        </button>
       </div>
     </section>
   );

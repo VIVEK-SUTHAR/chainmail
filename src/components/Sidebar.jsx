@@ -6,10 +6,10 @@ export default function Sidebar({ modal, setModal }) {
     <aside class="w-64 h-screen" aria-label="Sidebar">
       <div class="overflow-y-auto py-4 px-3 h-screen bg-gray-50 rounded dark:bg-gray-800 pt-8">
         <ul class="space-y-2">
-          <li>
+          <li className="">
             <a
               href="#"
-              class="flex items-center p-2 text-base font-bold text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              class="flex items-center p-2 text-base font-bold text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-grey-100"
             >
               <svg
                 class="w-6 h-6"
