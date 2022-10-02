@@ -6,8 +6,9 @@ import Sent from "./components/Sent";
 export function App() {
   return (
     <>
-      <Landing />
+      {/* <Landing /> */}
       <Router>
+        <Route path="/" component={Landing} />
         <Route path="/sentBox" component={Sent} />
       </Router>
     </>
