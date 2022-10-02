@@ -18,7 +18,7 @@ export default function Dashboard() {
     console.log(store.allMails);
   }, []);
   return (
-    <div className="flex flex-row overflow-y-scroll">
+    <div className="flex flex-row">
       <Sidebar modal={modal} setModal={setModal} />
       <MailBox mails={allMails} />
       {modal && <Compose setModal={setModal} />}

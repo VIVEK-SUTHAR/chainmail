@@ -1,11 +1,9 @@
 import convertDate from "../utils/convertDate";
 
 export default function MailBox({ mails }) {
-
   return (
-    <div className="bg-slate-500 flex-1 ">
-    <div className="text-4xl text-white p-4 font-semibold">All Mails</div>
-    <hr className="border-black border-t-2 mx-4"/>
+    <div className="bg-slate-500 flex-1 h-screen overflow-y-scroll overflow-x-hidden">
+      <div className="text-4xl text-white">All Mails</div>
       {mails &&
         mails.map((mail, i) => {
           var date = convertDate(mail.timeStamp);
@@ -22,7 +20,6 @@ export default function MailBox({ mails }) {
             </div>
           );
         })}
-      
     </div>
   );
 }

@@ -50,9 +50,9 @@ export default function Landing() {
     }
   };
   return !walletConnected ? (
-    <div className="h-screen w-screen">
+    <div className="h-screen w-screen bg-gray-900">
       <div className="text-center pt-36 justify-center items-center">
-        <h1 className="font-Inter font-extrabold text-7xl mb-12">
+        <h1 className="font-Inter font-extrabold text-7xl mb-12 text-white text-transparent bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500  bg-clip-text text-clip ">
           🔗Chain-Mail
         </h1>
         <div className="h-36 w-36 text-center justify-center m-auto">
