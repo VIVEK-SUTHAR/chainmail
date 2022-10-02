@@ -1,8 +1,7 @@
-import React from "react";
-import Sidebar from "../components/Sidebar";
-import { useEffect } from "preact/hooks";
-import getInBox from "../utils/getInbox";
-import useStore from "../utils/store";
+import React from 'react'
+import Sidebar from '../components/Sidebar'
+import { useState } from 'preact/hooks'
+import Compose from '../components/Compose'
 import MailBox from "../components/MailBox";
 export default function Dashboard() {
   const store = useStore();
