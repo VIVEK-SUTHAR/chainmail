@@ -76,7 +76,7 @@ export default function Compose({ setModal }) {
             id=""
           />
         </div>
-        <button className="bg-red-500 text-2xl p-2 mx-5 rounded-md" onClick={sendMAIL}>
+        <button className="bg-green-500 text-2xl p-2 mx-5" onClick={sendMAIL}>
           Send
         </button>
       </div>

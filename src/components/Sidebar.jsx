@@ -4,13 +4,8 @@ import { useState } from "preact/hooks";
 export default function Sidebar({ modal, setModal }) {
    console.log(modal);
   return (
-<<<<<<< HEAD
-    <aside class="w-64 h-screen" aria-label="Sidebar">
-      <div class="overflow-y-auto py-4 px-3 h-screen bg-gray-50 dark:bg-gray-800 pt-8">
-=======
     <aside class="flex-[0.1] w-64 h-screen" aria-label="Sidebar">
-      <div class="overflow-y-auto py-4 px-3 h-screen bg-gray-50 rounded dark:bg-gray-800 pt-8">
->>>>>>> 45e22f8 (fea:something)
+      <div class="overflow-y-auto py-4 px-3 h-screen bg-gray-50 dark:bg-gray-800 pt-8">
         <ul class="space-y-2">
           <li className="">
             <a

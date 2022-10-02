@@ -3,13 +3,9 @@ import convertDate from "../utils/convertDate";
 export default function MailBox({ mails }) {
 
   return (
-<<<<<<< HEAD
-    <div className="bg-slate-500 w-full">
-    <div className="text-4xl text-white p-4 font-semibold">All Mails</div>
-=======
     <div className="bg-slate-500 flex-1 ">
-    <div className="text-4xl text-white">All Mails</div>
->>>>>>> 45e22f8 (fea:something)
+    <div className="text-4xl text-white p-4 font-semibold">All Mails</div>
+    <hr className="border-black border-t-2 mx-4"/>
       {mails &&
         mails.map((mail, i) => {
           var date = convertDate(mail.timeStamp);
