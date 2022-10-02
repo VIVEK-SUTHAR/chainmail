@@ -34,13 +34,19 @@ https://nodejs.org/en/download/
 git clone https://github.com/VIVEK-SUTHAR/chainmail.git
 ```
 
-<p>3. run below command</p>
+<p>3. Navigate to ChainMail.</p>
+
+```
+cd chainmail
+```
+
+<p>4. run below command</p>
 
 ```
 npm i
 ```
 
-<p>4. run local dev environment</p>
+<p>5. run local dev environment</p>
 
 ```
 npm run dev
