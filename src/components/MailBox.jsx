@@ -1,3 +1,4 @@
+import { Link } from "preact-router";
 import convertDate from "../utils/convertDate";
 
 export default function MailBox({ mails }) {
@@ -11,14 +12,16 @@ export default function MailBox({ mails }) {
           // .then((res)=>{date=res});
           console.log(date);
           return (
-            <div className="bg-slate-300 w-screen my-2 p-4 mx-2 rounded-sm">
-              <span>From : {mail.sender}</span>
-              <h1>Subject: {mail.subject}</h1>
-              <br />
-              <span>At {date}</span>
-              <br />
-              <span>{mail.body}</span>
-            </div>
+            <a href={`/mailID/${i}`}>
+              <div className="bg-slate-300 w-screen my-2 p-4 mx-2 rounded-sm">
+                <span>From : {mail.sender}</span>
+                <h1>Subject: {mail.subject}</h1>
+                <br />
+                <span>At {date}</span>
+                <br />
+                <span>{mail.body}</span>
+              </div>
+            </a>
           );
         })}
     </div>
