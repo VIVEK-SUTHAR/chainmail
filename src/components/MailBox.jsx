@@ -1,7 +1,6 @@
 import convertDate from "../utils/convertDate";
 
 export default function MailBox({ mails }) {
-  var date = "";
 
   return (
     <div className="bg-slate-500">
@@ -22,6 +21,7 @@ export default function MailBox({ mails }) {
             </div>
           );
         })}
+      
     </div>
   );
 }
