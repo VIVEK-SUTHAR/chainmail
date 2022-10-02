@@ -1,11 +1,12 @@
 import { useState } from 'preact/hooks'
 import './app.css'
+import Landing from './pages/Landing'
 
 export function App() {
 
   return (
     <>
-      <div className='bg-red-500'>hi</div>
-    </>
+      <Landing />
+      </>
   )
 }
