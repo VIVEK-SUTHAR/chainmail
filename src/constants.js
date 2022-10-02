@@ -1,4 +1,4 @@
-const CONTRACT_ADDRESS = "0x401b8D4CE9E941763b572B9c81B1c06b410E58aA";
+const CONTRACT_ADDRESS = "0x3cc820510047223F74dA2a9Eb61c02e972304590";
 
 const ABI = [
   {
@@ -42,11 +42,6 @@ const ABI = [
         internalType: "string",
         name: "body",
         type: "string",
-      },
-      {
-        internalType: "uint256",
-        name: "timeStamp",
-        type: "uint256",
       },
       {
         internalType: "string",

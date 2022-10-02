@@ -8,7 +8,6 @@ export default function Landing() {
   const [walletConnected, setWalletConnected] = useState(false);
   const [currentAccount, setCurrentAccount] = useState(null);
   const store = useStore();
-
   const connectWallet = async () => {
     try {
       const { ethereum } = window;

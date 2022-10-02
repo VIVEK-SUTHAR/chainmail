@@ -1,21 +1,21 @@
-import React from 'react'
-import Sidebar from '../components/Sidebar'
+import React from "react";
+import Sidebar from "../components/Sidebar";
 import { useEffect } from "preact/hooks";
 import getInBox from "../utils/getInbox";
 import useStore from "../utils/store";
 export default function Dashboard() {
   const store = useStore();
   useEffect(() => {
-     fetchMails();
-     console.log(store.currentAccount);
-  },[]);
+    fetchMails();
+  }, []);
   async function fetchMails() {
     let allMails = await getInBox();
     store.setAllMails(allMails);
+    console.log(store.allMails);
   }
   return (
     <div>
-        <Sidebar />
+      <Sidebar />
       <aside class="w-64 h-screen" aria-label="Sidebar">
         <div class="overflow-y-auto py-4 px-3 h-screen bg-gray-50 rounded dark:bg-gray-800 pt-8">
           <ul class="space-y-2">
