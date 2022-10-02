@@ -5,7 +5,7 @@ export default function Sidebar({ modal, setModal }) {
   console.log(modal);
   return (
     <aside class="flex-[0.1] w-64 h-screen" aria-label="Sidebar">
-      <div class="overflow-y-auto py-4 px-3 h-screen bg-gray-50 rounded dark:bg-gray-800 pt-8">
+      <div class="overflow-y-auto py-4 px-3 h-screen bg-gray-50 dark:bg-gray-800 pt-8">
         <ul class="space-y-2">
           <li className="">
             <a
@@ -76,7 +76,7 @@ export default function Sidebar({ modal, setModal }) {
                   d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
                 ></path>
               </svg>
-              <span class="flex-1 ml-3 whitespace-nowrap text-lg">SemtBox</span>
+              <span class="flex-1 ml-3 whitespace-nowrap text-lg">Sent Box</span>
             </Link>
           </li>
           <li>

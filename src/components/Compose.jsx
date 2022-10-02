@@ -15,7 +15,7 @@ export default function Compose({ setModal }) {
     setModal(false);
   }
   return (
-    <section className="absolute top-1/4 left-1/4 overflow-y-hidden w-3/5 bg-[#f2f6fc] shadow-lg z-50">
+    <section className="absolute top-1/4 left-1/4 overflow-y-hidden w-3/5 bg-[#f2f6fc] shadow-2xl z-50">
       <div className=" h-96 border-black rounded-2xl">
         <nav>
           <ul className="list-none">

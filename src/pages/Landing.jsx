@@ -53,10 +53,10 @@ export default function Landing() {
     <div className="h-screen w-screen bg-gray-900">
       <div className="text-center pt-36 justify-center items-center">
         <h1 className="font-Inter font-extrabold text-7xl mb-12 text-white text-transparent bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500  bg-clip-text text-clip ">
-          🔗Chain-Mail
+          Chain-Mail
         </h1>
         <div className="h-36 w-36 text-center justify-center m-auto">
-          <img src="./blueGuy.svg" alt="" />
+          <img className='' src="/casual.png" alt="" />
         </div>
         <button
           className="mt-24 py-4 text-2xl bg-blue-500 hover:bg-blue-400 text-white font-bold px-6 border-b-8 border-blue-700 hover:border-blue-500 rounded"
