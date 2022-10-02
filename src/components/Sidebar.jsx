@@ -4,7 +4,7 @@ export default function Sidebar({ modal, setModal }) {
    console.log(modal);
   return (
     <aside class="w-64 h-screen" aria-label="Sidebar">
-      <div class="overflow-y-auto py-4 px-3 h-screen bg-gray-50 rounded dark:bg-gray-800 pt-8">
+      <div class="overflow-y-auto py-4 px-3 h-screen bg-gray-50 dark:bg-gray-800 pt-8">
         <ul class="space-y-2">
           <li className="">
             <a

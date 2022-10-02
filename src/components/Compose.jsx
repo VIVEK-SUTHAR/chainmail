@@ -1,5 +1,4 @@
 import { useState } from "preact/hooks";
-import React from "react";
 import sendMail from "../utils/sendMail";
 
 export default function Compose({ setModal }) {
@@ -73,9 +72,7 @@ export default function Compose({ setModal }) {
             id=""
           />
         </div>
-        <button classname="" onClick={sendMAIL}>
-          Send
-        </button>
+        <button classname="bg-green-400" onClick={sendMAIL}>Send</button>
       </div>
     </section>
   );
