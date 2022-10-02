@@ -6,6 +6,10 @@ export default function Compose({ setModal }) {
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
   async function sendMAIL() {
+    if (to.length != 42) {
+      alert("Enter Correct Eth Address")
+      return;
+    }
     let txn = await sendMail(to, subject, body, "", "");
     alert("Mail sent");
     setModal(false);
@@ -72,7 +76,9 @@ export default function Compose({ setModal }) {
             id=""
           />
         </div>
-        <button classname="bg-green-400" onClick={sendMAIL}>Send</button>
+        <button className="bg-red-500 text-2xl p-2 mx-5 rounded-md" onClick={sendMAIL}>
+          Send
+        </button>
       </div>
     </section>
   );

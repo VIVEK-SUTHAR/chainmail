@@ -1,10 +1,16 @@
+import { Link } from "preact-router";
 import { useState } from "preact/hooks";
 
 export default function Sidebar({ modal, setModal }) {
    console.log(modal);
   return (
+<<<<<<< HEAD
     <aside class="w-64 h-screen" aria-label="Sidebar">
       <div class="overflow-y-auto py-4 px-3 h-screen bg-gray-50 dark:bg-gray-800 pt-8">
+=======
+    <aside class="flex-[0.1] w-64 h-screen" aria-label="Sidebar">
+      <div class="overflow-y-auto py-4 px-3 h-screen bg-gray-50 rounded dark:bg-gray-800 pt-8">
+>>>>>>> 45e22f8 (fea:something)
         <ul class="space-y-2">
           <li className="">
             <a
@@ -56,29 +62,30 @@ export default function Sidebar({ modal, setModal }) {
               </span>
             </a>
           </li>
-
-          <li>
-            <a
-              href="#"
-              class="flex items-center p-2 text-base font-bold text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            <li>
+            <Link
+              href="/sentMail"
+                class="flex items-center p-2 text-base font-bold text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
-                ></path>
-              </svg>
-              <span class="flex-1 ml-3 whitespace-nowrap text-lg">Spam</span>
-            </a>
-          </li>
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
+                  ></path>
+                </svg>
+                <span class="flex-1 ml-3 whitespace-nowrap text-lg">
+                  SemtBox
+                </span>
+              </Link>
+            </li>
           <li>
             <a
               onClick={() => {

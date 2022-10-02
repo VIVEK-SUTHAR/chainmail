@@ -11,6 +11,7 @@
   "dependencies": {
     "ethers": "^5.7.1",
     "preact": "^10.10.6",
+    "preact-router": "^4.1.0",
     "zustand": "^4.1.1"
   },
   "devDependencies": {
