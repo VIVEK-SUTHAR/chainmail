@@ -2,6 +2,14 @@ import { Link } from "preact-router";
 import convertDate from "../utils/convertDate";
 
 export default function MailBox({ mails }) {
+  if (mails.length === 0) {
+    return (
+      <div className="bg-slate-500 flex-1 h-screen overflow-y-scroll overflow-x-hidden text-center flex justify-center items-center text-4xl text-white ">
+        You don't have any mails<br />
+        Make sure your friend have your wallet address
+      </div>
+    );
+  }
   return (
     <div className="bg-slate-500 flex-1 h-screen overflow-y-scroll overflow-x-hidden ">
       <div className="text-4xl text-white p-6">All Mails</div>
